@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    tools:context=".DetailsActivity">
+
+    <fragment
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_main"
+        android:name="com.example.kubra.friendstndr.MainFragment"
+        tools:layout="@layout/fragment_main"/>
+
+    <fragment
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_details"
+        android:name="com.example.kubra.friendstndr.DetailsFragment"
+        tools:layout="@layout/fragment_details"/>
+
+</LinearLayout>
